@@ -3,17 +3,14 @@
 </script>
 
 <svelte:head>
-	<title>Gianmarco Cavallo — About</title>
+	<title>Gabriel — Sobre</title>
 </svelte:head>
 
 <div class="container">
 	<main>
-		<h1>About</h1>
+		<h1>Sobre Mim</h1>
 		<p>
-			I'm a Software developer with over 2 years of front-end development experience, experienced in
-			both enterprise and open-source software development. I'm based in Italy and currently working
-			as a freelancer and coding in Node.js, React.js (and other web technologies) and Go(lang), but
-			I tend to learn and use the best technology and approach to best solve the problem I'm facing.
+			Sou um programador especializado em desenvolvimento web. Sempre fui entusiasta na área de computação, então decidi ir para o caminho da programação e automação de sistemas, nos últimos 5 anos tenho me dedicado para adquirir o conhecimento necessário para trabalhar com algo que eu gosto com programação. 
 		</p>
 		<h2>Skills</h2>
 		{#each Object.entries(skills) as [section, technologies]}

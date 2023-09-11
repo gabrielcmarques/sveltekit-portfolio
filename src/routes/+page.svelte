@@ -1,16 +1,16 @@
 <script>
-	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
-	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
-	import FaEnvelope from 'svelte-icons/fa/FaEnvelope.svelte';
-	import FaMedium from 'svelte-icons/fa/FaMedium.svelte';
 	import { modalOpened } from '$lib/store';
+	import FaEnvelope from 'svelte-icons/fa/FaEnvelope.svelte';
+	import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
+	import FaLinkedin from 'svelte-icons/fa/FaLinkedin.svelte';
 </script>
 
 <svelte:head>
 	<title>Gianmarco Cavallo - Main page</title>
 </svelte:head>
 <main>
-	<h1>Hi!✋ <br /> I'm Gianmarco a Front-End Developer 💻 based in Italy</h1>
+	<h1>Gabriel de Christo Marques</h1>
+	<p>Desenvedor de Software 💻</p>
 	<div class="icons">
 		<div
 			role="button"
@@ -28,7 +28,7 @@
 		</div>
 
 		<a
-			href="https://github.com/Ladvace"
+			href="https://github.com/gabrielcmarques"
 			aria-label="GitHub"
 			target="_blank"
 			rel="noopener noreferrer"
@@ -38,7 +38,7 @@
 			</div>
 		</a>
 		<a
-			href="https://www.linkedin.com/in/ladvace/"
+			href="https://www.linkedin.com/in/gabriel-christo-marques/"
 			aria-label="Linkedin"
 			target="_blank"
 			rel="noopener noreferrer"
@@ -47,23 +47,17 @@
 				<FaLinkedin />
 			</div>
 		</a>
-		<a
-			href="https://medium.com/@ladvace"
-			aria-label="Medium"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			<div class="icon">
-				<FaMedium />
-			</div>
-		</a>
 	</div>
 </main>
 
 <style>
 	a {
-		color: white;
-		text-decoration: none;
+		font-weight: 400;
+		transition: all .2s;
+		outline: 2px solid transparent;
+		color: var(--white);
+		/* color: white;
+		text-decoration: none; */
 	}
 	main {
 		text-align: center;
@@ -71,21 +65,27 @@
 		margin: 0 auto;
 		text-align: center;
 
-		display: flex;
+		/* display: flex;
 		flex-direction: column;
 		height: calc(100vh - 80px - 88px);
 		justify-content: center;
-		align-items: center;
+		align-items: center; */
 	}
 
-	h1 {
-		font-weight: 700;
-	}
 
-	main > h1 {
-		margin: 50px 10px 0;
-		font-size: 36px;
-	}
+
+	/* p {
+	font-size: 2.5rem;
+	font-family: 'Jost', sans-serif;
+	margin: 1.5rem 0 3.5rem;
+	max-width: 700px;
+	} */
+
+	/* main > h1 {		
+		margin: 50px 10px 0;		
+		line-height: 1;
+		font-weight: 400;
+	} */
 
 	.icons {
 		display: flex !important;
@@ -120,4 +120,6 @@
 			max-width: none;
 		}
 	}
+
+
 </style>

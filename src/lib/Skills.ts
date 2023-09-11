@@ -1,10 +1,10 @@
 const skills = {
-	programming: ['Node.js', 'TypeScript', 'React.js', 'Svelte.js', 'Go', 'Electron'],
+	Programação: ['TypeScript', 'Svelte.js', 'Express.js', 'Python', 'Django', 'Flask'],
 	// devops: [],
-	databases: ['MongoDB', 'PostgreSQL'],
+	Databases: ['SQLite', 'PostgreSQL', 'MySql'],
 	// tools: [],
-	languages: ['Italian', 'English'],
-	other: ['Design principles', 'User interface design']
+	Linguagens: ['Português', 'English'],
+	Ferramentas: ['WSL', 'Docker', 'Postman', 'Git', 'Nginx', 'Gunicorn' ]
 };
 
 export default skills;

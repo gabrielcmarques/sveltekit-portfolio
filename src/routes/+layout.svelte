@@ -1,14 +1,14 @@
 <script lang="ts">
-	import Navbar from '$lib/components/NavBar.svelte';
 	import Button from '$lib/components/Button.svelte';
-	import FaCopy from 'svelte-icons/fa/FaCopy.svelte';
+	import Navbar from '$lib/components/NavBar.svelte';
 	import Tooltip from '$lib/components/Tooltip.svelte';
-	// import { beforeNavigate } from '$app/navigation';
+	import FaCopy from 'svelte-icons/fa/FaCopy.svelte';
+// import { beforeNavigate } from '$app/navigation';
 	import { page } from '$app/stores';
-	import Modal from '$lib/components/Modal.svelte';
-	import { onMount } from 'svelte';
-	import { customBackground } from '$lib/store';
 	import { Email } from '$lib/Constants';
+	import Modal from '$lib/components/Modal.svelte';
+	import { customBackground } from '$lib/store';
+	import { onMount } from 'svelte';
 	// import routes from '$lib/NavRoutes';
 
 	let copied = false;
@@ -113,7 +113,7 @@
 				</Tooltip>
 			</div>
 		</div>
-		<Button>Send Email</Button>
+		<Button>Enviar Email</Button>
 	</div>
 </Modal>
 <Navbar segment={$page.url.pathname} />
@@ -121,21 +121,30 @@
 <slot />
 
 <footer>
-	Created by <a class="me" href="/about">Ladvace</a> ❤️ with
-	<span class="svelte">Svelte</span>
+	<p>Footer</p>
 </footer>
 
 <style>
 	* {
-		box-sizing: border-box;
+		box-sizing: border-box;		
 	}
 
 	@font-face {
-		font-family: 'Fira Code', monospace;
-		font-display: optional;
-		src: url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+		font-family: 'Hk Grotesk';
+		font-style: normal;
+		font-weight: 400;
+		/* src: url('./fonts/HKGrotesk-Regular.woff') format('woff'); */
+		src: url('./../../static/fonts/HKGrotesk-Regular.woff');
+		font-display: swap;
 	}
 
+	@font-face {
+		font-family: 'Jost';
+		font-style: normal;
+		font-weight: 400;
+		src: url('./../../fonts/Jost-Regular.ttf') format('truetype');
+		font-display: swap;
+	}
 	:global(#svelte) {
 		width: 100vw;
 		height: 100%;
@@ -148,18 +157,25 @@
 
 	:global(html),
 	:global(body) {
-		transition: background-color 0.2s ease 0s;
+		/* transition: background-color 0.2s ease 0s;
 		position: relative;
 		width: 100%;
 		height: 100%;
-		overflow: auto;
-		font-family: 'Fira Code', monospace;
-		background-color: #0a0908;
+		overflow: auto; */
+		/* font-family: 'Fira Code', monospace;
+		background-color: #0a0908; */
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://gabrielcm.dev/images/headerr.webp");;
+		
+
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;	
 	}
 
 	:global(body) {
-		background-color: var(--background);
-		background-size: 200% 200%;
+		/* background-color: var(--background); */
+		/* background-size: 200% 200%; */
 		color: white;
 		margin: 0;
 		box-sizing: border-box;
@@ -171,6 +187,8 @@
 	}
 
 	:global(h1) {
+		font-family: 'Hk Grotesk', sans-serif;
+		font-size: 3.5rem;
 		border: 0;
 	}
 
@@ -199,14 +217,6 @@
 		:global(body) {
 			padding: 0 100px;
 		}
-	}
-
-	:global(a) {
-		text-decoration: none;
-	}
-
-	:global(a) {
-		text-decoration: none;
 	}
 
 	a {

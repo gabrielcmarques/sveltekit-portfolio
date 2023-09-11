@@ -5,15 +5,11 @@ const routes = [
 	},
 	{
 		href: '/projects',
-		label: 'Projects'
+		label: 'Projetos'
 	},
 	{
 		href: '/about',
-		label: 'About'
-	},
-	{
-		href: '/blog',
-		label: 'Blog'
+		label: 'Sobre'
 	}
 ];
 
